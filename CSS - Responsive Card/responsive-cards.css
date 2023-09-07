@@ -4,3 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    background: url(./images/responsive-cards-background-1.png);
+    width: 100%;
+    background-size: cover;
+    background-color: #c7cdcb;
+}
