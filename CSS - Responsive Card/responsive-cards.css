@@ -21,4 +21,13 @@ body{
     width: 1170px;
     margin: 0 auto;
     border: 2px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cards-items{
+    flex-basis: 23%;
+}
+.cards-items>img{
+    width: 100px;
 }
