@@ -18,7 +18,7 @@ body{
     color: #1e1e1e;
 }
 .cards-container{
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
     /* border: 2px solid blue; */
     display: flex;
@@ -72,6 +72,18 @@ body{
     }
     .cards-items{
         flex-basis: 45%;
+        /* margin: 10px; */
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .cards-container{
+        width: 100%;
+        justify-content: space-evenly;
+        /* flex-direction: column; */
+    }
+    .cards-items{
+        flex-basis: 30%;
         /* margin: 10px; */
     }
 }
