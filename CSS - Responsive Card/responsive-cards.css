@@ -6,7 +6,19 @@
 }
 body{
     background: url(./images/responsive-cards-background-1.png);
-    width: 100%;
-    background-size: cover;
+    /* width: 100%; */
+    /* background-size: cover; */
     background-color: #c7cdcb;
+}
+
+.main-container>h1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 25px 0px;
+    color: #1e1e1e;
+}
+.cards-container{
+    width: 1170px;
+    margin: 0 auto;
+    border: 2px solid blue;
 }
