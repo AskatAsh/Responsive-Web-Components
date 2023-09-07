@@ -53,6 +53,7 @@ body{
     border-radius: 10px;
 }
 
+/* For mobile devices */
 @media screen and (max-width: 576px) {
     .cards-container{
         width: 100%;
@@ -63,7 +64,7 @@ body{
     }
 }
 
-
+/* For tablet or ipad devices */
 @media screen and (min-width: 576px) and (max-width: 992px){
     .cards-container{
         width: 100%;
@@ -76,6 +77,7 @@ body{
     }
 }
 
+/* For notepad or laptop devices */
 @media screen and (min-width: 992px) and (max-width: 1199px){
     .cards-container{
         width: 100%;
