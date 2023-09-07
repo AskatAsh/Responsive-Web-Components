@@ -36,4 +36,16 @@ body{
 }
 .cards-items> h3 , p{
     padding: 10px 0px;
+    color: #1e1e1e;
+}
+.cards-items>p{
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+.cards-items > button{
+    padding: 10px 20px;
+    border: none;
+    background: #1e1e1e;
+    color: rgb(234, 234, 234);
+    border-radius: 10px;
 }
