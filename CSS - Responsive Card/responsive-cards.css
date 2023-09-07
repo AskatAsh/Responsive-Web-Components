@@ -27,7 +27,13 @@ body{
 }
 .cards-items{
     flex-basis: 23%;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: white;
 }
 .cards-items>img{
     width: 100px;
+}
+.cards-items> h3 , p{
+    padding: 10px 0px;
 }
