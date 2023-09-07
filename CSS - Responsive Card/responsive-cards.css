@@ -20,7 +20,7 @@ body{
 .cards-container{
     width: 1170px;
     margin: 0 auto;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -32,6 +32,7 @@ body{
     background-color: white;
     box-shadow: 0px 0px 7px 2px rgb(173, 173, 173);
     border-radius: 5px;
+    text-align: center;
 }
 .cards-items>img{
     width: 100px;
@@ -50,4 +51,27 @@ body{
     background: #1e1e1e;
     color: rgb(234, 234, 234);
     border-radius: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .cards-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .cards-items{
+        margin: 10px;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .cards-container{
+        width: 100%;
+        justify-content: space-evenly;
+        /* flex-direction: column; */
+    }
+    .cards-items{
+        flex-basis: 45%;
+        /* margin: 10px; */
+    }
 }
