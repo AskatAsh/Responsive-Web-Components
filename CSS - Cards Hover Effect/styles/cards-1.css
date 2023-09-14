@@ -45,3 +45,6 @@
     transition: 0.5s all;
     opacity: 0;
 }
+.card:hover::before{
+    opacity: 1;
+}
