@@ -123,3 +123,13 @@
         flex-basis: 30%;
     }
 }
+/* responsive for laptop or similar devices */
+@media screen and (min-width: 1200px) and (max-width: 1366px){
+    .wrapper{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .card{
+        flex-basis: 30%;
+    }
+}
