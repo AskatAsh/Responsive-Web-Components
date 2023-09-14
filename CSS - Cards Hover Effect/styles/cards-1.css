@@ -62,6 +62,18 @@
     color: #fff;
     z-index: 3;
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(-20px);
     transition: 0.5s all;
+}
+.card:hover .info{
+    opacity: 1;
+}
+.card .info h3{
+    margin: 0;
+}
+.card .info p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
