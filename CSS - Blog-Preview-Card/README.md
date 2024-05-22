@@ -20,8 +20,8 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 Users should be able to:
 
-- See hover and focus states for all interactive elements on the page
-- Use keyboard tab button to navigate elements
+- See active, hover and focus states for all interactive elements on the page
+- Use keyboard tab button to navigate link elements
 - See from any smaller to larger devices easily
 
 ### Screenshot
@@ -49,23 +49,23 @@ Users should be able to:
 Doing this project I learned
 
 - About html semantic elements
-- CSS focus and hover state
-- Web accessibility and Html tabindex attribute
+- CSS focus, active and hover state
+- Web accessibility
 - CSS media query for different viewports
 
 To see what I learned and used, see below:
 
 ```html
 <article>
-  <strong id="category" tabindex="2">Learning</strong>
+  <strong id="category">Learning</strong>
 
-  <p id="publish-date" tabindex="3">Published 21 Dec 2023</p>
+  <p id="publish-date">Published 21 Dec 2023</p>
 
   <h2 id="blog-title">
-    <a href="" target="_blank" tabindex="4">Html & CSS foundations</a>
+    <a href="#">Html & CSS foundations</a>
   </h2>
 
-  <p id="blog-para" tabindex="5">
+  <p id="blog-para">
     These languages are the backbone of every website, defining structure,
     content, and presentation.
   </p>
