@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Code Link Here](https://github.com/AskatAsh/Responsive-Web-Components/tree/main/CSS%20-%20Blog-Preview-Card)
-- Live Site URL: [Live Site URL Here](https://your-live-site-url.com)
+- Live Site URL: [Live Site URL Here](https://responsive-blog-card.netlify.app/)
 
 ## My process
 
