@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+body{
+    background-color: aliceblue;
+}
+
+section#banner-container{
+    max-width: 1920px;
+    width: 100%;
+    max-height: 920px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(16, 16, 16, 0), rgba(16, 16, 16, 1) 100%), url("./assets/hero-bg.png");
+    /* background-blend-mode: multiply; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+#banner-container .banner-content{
+    max-width: 1000px;
+    width: 90%;
+}
+.banner-content .subtitle{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.banner-content h2{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 80px;
+}
+.banner-content p{
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 1.5rem 0px;
+}
+.banner-content button{
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: block;
+    margin: 0 auto; /* center align */
+    margin-top: 8px;
+    background-color: #52C303;
+    border: none;
+    padding: 20px 32px;
+    border-radius: 8px;
+}
+.banner-content button:hover{
+    background-color: rgba(222, 216, 51, 0.9);
+    cursor: pointer;
+}
+.banner-content h2, .banner-content p, .banner-content button {
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner-content h2{
+        font-size: 3rem;
+        line-height: 60px;
+    }
+    .banner-content .subtitle{
+        font-size: 1.75rem;
+    }
+    .banner-content p{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .banner-content button{
+        font-size: 1rem;
+    }
+}
