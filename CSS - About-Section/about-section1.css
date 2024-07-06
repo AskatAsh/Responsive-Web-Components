@@ -29,28 +29,22 @@
     flex: 1;
     color: #101010;
 }
-.about-us-info .about-titles-links{
+.about-us-info .info-container{
     padding: 0 3rem;
 }
-.about-us-info .about-titles-links .social-links{
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    margin-bottom: 0.5rem;
-}
-.about-us-info .about-titles-links .about-us-title{
+.about-us-info .info-container .about-us-title{
     text-align: center;
     margin: 0 auto;
     font-size: 3rem;
     font-weight: 700;
     padding: 1.5rem 0;
 }
-.about-us-info .about-titles-links .about-us-description{
+.about-us-info .info-container .about-us-description{
     text-align: center;
     font-size: 1.25rem;
     font-weight: 500;
 }
-.about-us-info .follow-us-text{
+.follow-text-links .follow-us-text{
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
@@ -58,6 +52,12 @@
     border-top: 2px solid rgba(16, 16, 16, 20%);
     border-bottom: 2px solid rgba(16, 16, 16, 20%);
     margin-top: 3rem;
+}
+.follow-text-links .social-links{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2.5rem;
 }
 
 /* Responsive code */
@@ -70,13 +70,13 @@
         width: 100%;
         aspect-ratio: 16/9;
     }
-    .about-us-info .about-titles-links{
+    .about-us-info .info-container{
         padding: 0 1rem;
     }
-    .about-us-info .about-titles-links .about-us-title{
+    .about-us-info .info-container .about-us-title{
         font-size: 2rem;
     }
-    .about-us-info .about-titles-links .about-us-description{
+    .about-us-info .info-container .about-us-description{
         font-size: 1rem;
     }
     .about-us-info .follow-us-text{
