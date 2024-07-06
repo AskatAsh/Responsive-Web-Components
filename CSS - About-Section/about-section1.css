@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+#about-section-container{
+    max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    /* gap: 3rem; */
+}
+/* left image */
+#about-section-container .img-container{
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* rght text and links */
+#about-section-container .about-us-info{
+    flex: 1;
+    color: #101010;
+}
+.about-us-info .about-titles-links{
+    padding: 0 3rem;
+}
+.about-us-info .about-titles-links .social-links{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+.about-us-info .about-titles-links .about-us-title{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 1.5rem 0;
+}
+.about-us-info .about-titles-links .about-us-description{
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.about-us-info .follow-us-text{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 2px solid rgba(16, 16, 16, 20%);
+    border-bottom: 2px solid rgba(16, 16, 16, 20%);
+    margin-top: 3rem;
+}
+
+/* Responsive code */
+@media only screen and (max-width: 600px) {
+    #about-section-container{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    #about-section-container .img-container{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .about-us-info .about-titles-links{
+        padding: 0 1rem;
+    }
+    .about-us-info .about-titles-links .about-us-title{
+        font-size: 2rem;
+    }
+    .about-us-info .about-titles-links .about-us-description{
+        font-size: 1rem;
+    }
+    .about-us-info .follow-us-text{
+        font-size: 1.25rem;
+    }
+    
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    #about-section-container{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    #about-section-container .img-container{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+}
