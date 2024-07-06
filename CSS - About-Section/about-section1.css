@@ -18,11 +18,14 @@
 }
 /* left image */
 #about-section-container .img-container{
+    background-color: #ccc;
+    height: 640px;
+    background-image: url("./assets/foods.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 /* rght text and links */
 #about-section-container .about-us-info{
