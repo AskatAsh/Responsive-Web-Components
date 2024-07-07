@@ -24,19 +24,21 @@ header nav{
     margin: 0 auto;
     padding: 2rem 1.25rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
 }
 header nav ul{
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    /* align-items: center; */
+    gap: 0.25rem;
 }
 header nav ul li{
     list-style-type: none;
 }
 header nav ul li a{
+    padding: 0.875rem 1rem;
     display: block;
     text-decoration: none;
     font-size: 1.25rem;
@@ -48,7 +50,8 @@ header nav ul li a:hover{
 }
 header nav ul li .hire_me_btn{
     padding: 0.875rem 1rem;
-    min-width: 7rem;
+    margin-top: 0.875rem;
+    min-width: 7rem;    
     text-align: center;
     background-color: var(--bg-primary);
     color: white;
@@ -63,8 +66,8 @@ header nav ul .hire_me_btn:hover{
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--almost-black);
-    border-top: 3px solid var(--almost-black);
-    border-bottom: 3px solid var(--almost-black);
+    border-top: 2px solid var(--almost-black);
+    border-bottom: 2px dashed var(--almost-black);
     padding: 0.25rem 0;
     transition: padding 200ms;
     display: none;
@@ -89,12 +92,15 @@ header nav ul .hire_me_btn:hover{
     header nav ul > li > ul{
         background-color: white;
         border: 2px solid var(--almost-black);
+        box-shadow: 2px 2px 0px 2px var(--almost-black);
         padding: 1rem;
         border-radius: 8px;
         position: absolute;
         right: -500px;
         top: 120%;
         flex-direction: column;
+        z-index: 99;
+        transition: right 200ms;
     }
     /* header nav ul li:hover ul{
         right: 0px;
@@ -107,5 +113,8 @@ header nav ul .hire_me_btn:hover{
     header nav{
         justify-content: center;
         gap: 2rem;
+    }
+    nav ul li.menu-icon input:checked + label + ul{
+        right: -50px;
     }
 } 
