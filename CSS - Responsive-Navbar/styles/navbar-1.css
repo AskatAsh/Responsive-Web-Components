@@ -49,6 +49,7 @@ header nav ul li a:hover{
 }
 header nav ul li .hire_me_btn{
     padding: 0.875rem 1rem;
+    margin-left: 0.875rem;
     min-width: 7rem;    
     text-align: center;
     background-color: var(--bg-primary);
@@ -102,6 +103,7 @@ header nav ul .hire_me_btn:hover{
     }
     header nav ul li .hire_me_btn{
         margin-top: 0.875rem;
+        margin-left: 0;
     }
     /* header nav ul li:hover ul{
         right: 0px;
