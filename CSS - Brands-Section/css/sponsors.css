@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+:root{
+    --dark-1:  #131313;
+    --dark-3: #727272;
+}
+
+#section-container{
+    max-width: 1400px;
+    width: 95%;
+    margin-inline: auto;
+}
+#section-container .section-title{
+    font-size: 2.8125rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--dark-1);
+}
+#section-container .section-subtitle{
+    font-size: 1rem;
+    line-height: 26px;
+    text-align: center;
+    max-width: 542px;
+    margin-inline: auto;
+    margin-block: 1.5rem 3.125rem;
+    color: var(--dark-3);
+}
+
+.sponsors-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sponsors-container .sponsor{
+    max-width: 160px;
+    width: 100%;
+    object-fit: cover;
+}
+.sponsor img{
+    display: block;
+    width: 100%;
+    filter: grayscale();
+}
+
+@media screen and (max-width: 1024px) {
+    .sponsors-container{
+        gap: 2rem;
+        justify-content: center;
+    }
+    .sponsors-container .sponsor{
+        max-width: 120px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .sponsors-container .sponsor{
+        max-width: 100px;
+    }
+}
+@media screen and (max-width: 576px) {
+    #section-container .section-title{
+        font-size: 2rem;
+    }
+}
