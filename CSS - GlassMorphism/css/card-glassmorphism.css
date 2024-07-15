@@ -78,6 +78,7 @@ body{
     right: 20px;
     font-size: 8rem;
     color: rgba(255, 255, 255, 0.15);
+    pointer-events: none;
 }
 .card-container .card .content h3{
     font-size: 2rem;
