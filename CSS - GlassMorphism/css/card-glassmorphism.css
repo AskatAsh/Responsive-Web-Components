@@ -44,6 +44,11 @@ body{
     background-image: linear-gradient(rgb(48, 112, 223), rgb(92, 237, 67));
     clip-path: circle(35% at 10% 10%);
 }
+.card-container{
+    position: relative;
+    perspective: 1000px;
+    z-index: 1;
+}
 .card-container .card{
     position: relative;
     width: 300px;
@@ -59,16 +64,66 @@ body{
     border-left: 1px solid rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(5px);
     overflow: hidden;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: all 600ms ease-out;
 }
+/* css code for tilting effect */
+.tilt-space{
+	width: 33.333%;
+	height: 33.333%;
+	position: absolute;
+	z-index: 2;
+}
+.tilt-space:nth-child(1){ left: 0; top: 0; }
+.tilt-space:nth-child(2){ left: 33.333%; top: 0; }
+.tilt-space:nth-child(3){ left: 66.666%; top: 0; }
+.tilt-space:nth-child(4){ left: 0%; top: 33.333%; }
+.tilt-space:nth-child(5){ left: 33.333%; top: 33.333%; }
+.tilt-space:nth-child(6){ left: 66.666%; top: 33.333%; }
+.tilt-space:nth-child(7){ left: 0%; top: 66.666%; }
+.tilt-space:nth-child(8){ left: 33.333%; top: 66.666%; }
+.tilt-space:nth-child(9){ left: 66.666%; top: 66.666%; }
+
+.tilt-space:nth-child(1):hover ~ .card{
+    transform: rotateX(-20deg) rotateY(20deg);
+}
+.tilt-space:nth-child(2):hover ~ .card{
+    transform: rotateX(-20deg) rotateY(0deg);
+}
+.tilt-space:nth-child(3):hover ~ .card{
+    transform: rotateX(-20deg) rotateY(-20deg);
+}
+.tilt-space:nth-child(4):hover ~ .card{
+    transform: rotateX(0deg) rotateY(20deg);
+}
+.tilt-space:nth-child(5):hover ~ .card{
+    transform: rotateX(0deg) rotateY(0deg);
+}
+.tilt-space:nth-child(6):hover ~ .card{
+    transform: rotateX(0deg) rotateY(-20deg);
+}
+.tilt-space:nth-child(7):hover ~ .card{
+    transform: rotateX(20deg) rotateY(20deg);
+}
+.tilt-space:nth-child(8):hover ~ .card{
+    transform: rotateX(20deg) rotateY(0deg);
+}
+.tilt-space:nth-child(9):hover ~ .card{
+    transform: rotateX(20deg) rotateY(-20deg);
+}
+
+/* tilt effect code ends here */
+
 .card-container .card .content{
     text-align: center;
     color: #f0f0f0;
     padding: 1.25rem;
     transform: translateY(100px);
     opacity: 0;
-    transition: 600ms;
+    transition: all 600ms ease-out;
 }
-.card-container .card:hover .content{
+.card-container .tilt-space:hover ~ .card .content{
     opacity: 1;
     transform: translateY(0px);
 }
