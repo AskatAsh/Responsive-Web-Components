@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+:root{
+    --dark-1:  #131313;
+    --dark-2: #424242;
+    --dark-3: #727272;
+    --border-orange: #FF900E;
+}
+
+#section-container{
+    max-width: 1400px;
+    width: 95%;
+    margin-inline: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+#section-container .section-title{
+    font-size: 2.8125rem;
+    font-weight: 700;
+    color: var(--dark-1);
+    padding-left: 20px;
+    max-width: 460px;
+    width: 95%;
+    border-left: 5px solid var(--border-orange);
+}
+#section-container .section-subtitle{
+    font-size: 1rem;
+    line-height: 26px;
+    max-width: 542px;
+    width: 95%;
+    margin-block: 1.5rem 3.125rem;
+    color: var(--dark-3);
+}
+#section-container .right-image{
+    max-width: 708px;
+    height: 982px;
+    width: 90%;
+}
+
+#section-container .right-image img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+#section-container .left-text{
+    max-width: 586px;
+    width: 90%;
+}
+.left-text .feature-card{
+    padding: 1.875rem;
+    padding-right: 3rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-top: 1.25rem;
+}
+.feature-card .feature-title{
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark-1);
+}
+.feature-card .feature-description{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 26px;
+    color: var(--dark-3);
+}
+.right-image .badge{
+    padding: 2.8125rem 2.625rem;
+    background-color: var(--border-orange);
+    border-radius: 8px;
+    color: white;
+    width: fit-content;
+    margin-top: -100px;
+    margin-left: -70px;
+    border: none;
+}
+.right-image .badge strong{
+    font-size: 4.0625rem;
+}
+.right-image .badge span{
+    font-size: 1.5625rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+    #section-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+    #section-container .left-text{
+        max-width: 708px;
+        width: 90%;
+    }
+    .right-image .badge{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (max-width: 576px) {
+    #section-container .section-title{
+        font-size: 2.5rem;
+    }
+    .right-image .badge strong{
+        font-size: 2.5rem;
+    }
+    .right-image .badge span{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+}
