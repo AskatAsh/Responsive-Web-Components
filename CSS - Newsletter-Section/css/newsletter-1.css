@@ -2,7 +2,7 @@
 
 :root{
     --orange: #FF5400;
-    --orange-hover: rgba(255, 84, 0, 0.8);
+    --orange-hover: rgba(255, 84, 0, 0.7);
     --almost-black: #131318;
     --gray: #5A5A5D;
     --input-background: rgba(19, 19, 24, 0.05);
@@ -43,7 +43,7 @@
 }
 .line{
     color: var(--almost-black);
-    opacity: 30%;
+    opacity: 20%;
 }
 #newsletter-form{
     margin-top: 1.5rem;
@@ -80,12 +80,30 @@
     /* border: 2px solid var(--orange); */
     overflow: hidden;
     flex: 2;
+    position: relative;
 }
 #section-container .newsletter-image img{
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+#section-container .newsletter-image .badge{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 1.5rem 1.875rem;
+    border-radius: 1rem;
+    background-color: var(--orange);
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    transform: rotate(-20deg);
+}
+#section-container .newsletter-image .badge strong{
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 
 @media screen and (max-width: 768px) {
@@ -104,5 +122,15 @@
 @media screen and (max-width: 576px) {
     #section-container .newsletter-content p{
         padding-block: 0.875rem;
+    }
+    #section-container .newsletter-image{
+        height: 300px;
+    }
+    #section-container .newsletter-image .badge strong{
+        font-size: 1.25rem;
+    }
+    #section-container .newsletter-image .badge{
+        padding: 1.5rem 1.875rem;
+        bottom: 30px;
     }
 }
