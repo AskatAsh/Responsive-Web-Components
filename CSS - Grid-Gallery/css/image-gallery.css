@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --almost-black: #131318;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+#section-container{
+    max-width: 1200px;
+    width: 90%;
+    margin-inline: auto;
+}
+#section-container .image-gallery{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: 
+    'A A A A A A B B B B B B'
+    'C C C C D D D D D E E E'
+    'F F F F F G G G G G G G';
+}
+#section-container .image-gallery .image-box{
+    height: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+#section-container .image-gallery .image-box::before{
+    content: '';
+    background-color: var(--almost-black);
+    opacity: 20%;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#section-container .image-gallery .image-box img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+#section-container .image-gallery .image-box .text{
+    z-index: 9;
+    color: white;
+    position: absolute;
+    width: max-content;
+    font-size: 28px;
+    font-weight: 800;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-box:nth-child(1){
+    grid-area: A;
+}
+.image-box:nth-child(2){
+    grid-area: B;
+}
+.image-box:nth-child(3){
+    grid-area: C;
+}
+.image-box:nth-child(4){
+    grid-area: D;
+}
+.image-box:nth-child(5){
+    grid-area: E;
+}
+.image-box:nth-child(6){
+    grid-area: F;
+}
+.image-box:nth-child(7){
+    grid-area: G;
+}
+
+@media screen and (max-width: 768px) {
+    #section-container .image-gallery{
+        grid-template-areas: 
+        'A A A A A A A A A A A A'
+        'B B B B B B C C C C C C'
+        'D D D D D E E E E E E E'
+        'F F F F F F F G G G G G';
+    }
+}
+@media screen and (max-width: 576px) {
+    #section-container .image-gallery{
+        grid-template-areas:
+        'A'
+        'B'
+        'C'
+        'D'
+        'E'
+        'F'
+        'G';
+    }
+}
